@@ -7,15 +7,16 @@ import androidx.lifecycle.ViewModel
 import com.devlog.data.repository.RepositoryImpl
 import com.devlog.domain.usecase.LoginUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-
-class LoginViewModel() : ViewModel() {
+@HiltViewModel
+class LoginViewModel@Inject constructor(
+    private val loginUseCase:LoginUseCase
+): ViewModel() {
 
     var username by mutableStateOf("")
     var password by mutableStateOf("")
 
-    // Core 모듈의 UseCase 사용
-    private val loginUseCase = LoginUseCase(RepositoryImpl())
 
     fun onLoginClick():Boolean {
         val isLoggedIn = loginUseCase.login(username, password)

@@ -25,8 +25,9 @@ import com.devlog.feature_login.navigation.LoginRoute
 import com.devlog.feature_login.navigation.loginNavGraph
 import com.devlog.feature_main.navigation.mainNavGraph
 import com.devlog.feature_main.navigation.navigateMain
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,22 +50,6 @@ class MainActivity : ComponentActivity() {
 
                 }
             }
-        }
-    }
-}
-@Composable
-fun AppNavigation(navController: NavHostController) {
-    NavHost(navController = navController, startDestination = "login") {
-        composable("login") {
-            val loginViewModel = LoginViewModel()
-            LoginScreen(viewModel = loginViewModel) { isSuccess ->
-                if (isSuccess) {
-                    navController.navigate("main")
-                }
-            }
-        }
-        composable("main") {
-            MainScreen()
         }
     }
 }

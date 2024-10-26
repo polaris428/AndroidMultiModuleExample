@@ -1,6 +1,8 @@
 package com.devlog.data.repository
 
-class RepositoryImpl : Repository {
+import javax.inject.Inject
+
+class RepositoryImpl   @Inject constructor(): Repository {
     override fun login(username: String, password: String): Boolean {
         return username == "test" && password == "test"
     }
