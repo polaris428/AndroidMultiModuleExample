@@ -1,7 +1,6 @@
-include(":feature:feature_main")
 
 
-
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
     includeBuild("build-logic")
@@ -37,6 +36,8 @@ include(":feature")
 //include(":Feature:feature_login")
 
 include(":feature:feature_login")
+include(":feature:feature_main")
+
 include(":core:data")
 
 include(":core:design_system")

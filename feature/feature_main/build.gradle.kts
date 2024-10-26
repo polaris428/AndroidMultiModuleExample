@@ -17,7 +17,7 @@ android {
 }
 
 dependencies {
-
+    project
     implementation(project(":feature:feature_login"))
 
     implementation(libs.androidx.core.ktx)

@@ -20,8 +20,8 @@ android {
 }
 
 dependencies {
+    implementation(projects.feature.featureMain)
 
-    implementation(project(":feature:feature_main"))
 
 
 }
