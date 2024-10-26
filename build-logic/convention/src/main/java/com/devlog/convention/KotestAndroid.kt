@@ -1,6 +1,5 @@
 package com.devlog.convention
 
-import com.jun.loginCAApp.configureKotest
 import org.gradle.api.Project
 
 internal fun Project.configureKotestAndroid() {

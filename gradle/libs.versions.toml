@@ -48,7 +48,10 @@ ossLicensesPlugin = "0.10.6"
 androidxGlance = "1.0.0-beta01"
 glanceExperimentalTools = "0.2.2"
 
-
+kotlinxImmutable = "0.3.5"
+testng = "6.9.6"
+junitKtx = "1.2.1"
+monitor = "1.7.2"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
@@ -100,6 +103,10 @@ androidx-lifecycle-viewModelCompose = { group = "androidx.lifecycle", name = "li
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
 hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+kotlinx-immutable = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable", version.ref = "kotlinxImmutable" }
+testng = { group = "org.testng", name = "testng", version.ref = "testng" }
+androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
+androidx-monitor = { group = "androidx.test", name = "monitor", version.ref = "monitor" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -3,7 +3,7 @@ plugins {
 
     id("devlog.android.feature")
 
-  //  id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.android")
 }
 android
 

@@ -14,15 +14,16 @@ gradlePlugin {
     plugins {
         register("androidHilt") {
             id = "jun.android.hilt"
-            implementationClass = "com.jun.loginCAApp.HiltAndroidPlugin"
+            implementationClass = "com.devlog.AndroidMultiModuleExample.HiltAndroidPlugin"
         }
         register("kotlinHilt") {
-            id = "jun.kotlin.hilt"
-            implementationClass = "com.jun.loginCAApp.HiltKotlinPlugin"
+            id = "devlog.kotlin.hilt"
+            implementationClass = "com.devlog.AndroidMultiModuleExample.HiltKotlinPlugin"
         }
         register("androidRoom") {
             id = "jun.android.room"
-            implementationClass = "com.jun.loginCAApp.AndroidRoomPlugin"
+            implementationClass = "com.devlog.AndroidMultiModuleExample.AndroidRoomPlugin"
         }
+
     }
 }
